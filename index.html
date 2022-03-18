@@ -2,12 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign-Up form to learn how to code with HTML, CSS, JavaScript, or UX UI Design">
     <title>Responsive Form Layout E01</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    
+    <h1>Sign-Up & Learn To Code Now!</h1>
+    <section>
+        <div>
+            <h2>Learn Web Design, Coding, & Much More</h2>
+            <p>Nothing's gonna make your husband or wife madder than coming home and having a snow-covered dinner. And right there you got an almighty cloud. We'll throw some happy little limbs on this tree. Let's make some happy little clouds in our world. They say everything looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics. You are only limited by your imagination.</p>
+        </div>
+        <form action="#" method="post" name="signup-form">
+            <fieldset>
+                <p>Try it free for 7 days starting at $25 a month</p>
+                <h3>Field of Interest</h3>
+                <div class="radio-btn">
+                    <input id="html" name="area-interest" type="radio" value="html" autofocus>
+                    <label for="html">HTML</label>
+                </div>
+                <div class="radio-btn">
+                    <input id="css" name="area-interest" type="radio" value="css">
+                    <label for="css">CSS</label>
+                </div>
+                <div class="radio-btn">
+                    <input id="js" name="area-interest" type="radio" value="js">
+                    <label for="js">JavaScript</label>
+                </div>
+                <div class="radio-btn">
+                    <input id="uxui" name="area-interest" type="radio" value="uxui">
+                    <label for="uxui">UX UI Design</label>
+                </div>
+                <div>
+                    <label for="f-name">First Name</label>
+                    <input id="f-name" name="f-name" type="text" required minlength="3">
+                </div>
+                <div>
+                    <label for="l-name">Last Name</label>
+                    <input id="l-name" name="l-name" type="text" required minlength="2">
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="i.e.,  j_smith@yahoo.com" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="off" required minlength="10">
+                </div>
+                <div>
+                    <input type="submit" value="Claim Your Free Trial" name="submit">
+                </div>
+                <div class="check-box">
+                    <label for="subscribe">By signing up you are agreeing to our <a href="#">Terms of Service</a></label>
+                    <input id="subscribe" name="subscribe" type="checkbox" required>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <!-- Form Attributes
+        Name
+        Value
+        type
+        id
+        for
+
+        disabled
+        novalidate
+        autofocus
+        placeholder
+        required
+        autocomplete
+        minlength
+        maxlength
+        pattern
+     -->
 </body>
 </html>

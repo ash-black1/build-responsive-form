@@ -1,2 +1,137 @@
 /* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+    --white: #fff;
+    --dk-blue: #0d1238;
+    --li-blue: #272f70;
+    --dk-green: #374d12;
+    --li-green: #54761b;
+}
 
+body {
+    background-color: var(--dk-blue);
+    background-image: url(../img/oriental-tiles.png);
+    color: var(--white);
+}
+
+/* *************** Global Typography *************** */
+h1 {
+    visibility: hidden;
+    position: absolute;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    margin-left: 0.75rem;
+}
+
+/* *************** Section & Form *************** */
+section {
+    background-color: rgba(13, 18, 56, 0.7);
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+fieldset {
+    border: none;
+    background-color: var(--white);
+    color: var(--dk-blue);
+    border-radius: 0.313rem;
+    padding: 0 0 1rem 0;
+}
+
+fieldset > p {
+    background-color: var(--li-green);
+    color: var(--white);
+    padding: 0.75rem;
+    border-radius: 0.313rem 0.313rem 0 0;
+    text-align: center;
+}
+
+fieldset > div {
+    padding: 0 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+fieldset > div.radio-btn {
+    display: flex;
+    margin-bottom: 0.25rem;
+}
+
+fieldset label {
+    display: block;
+}
+
+fieldset input {
+    width: 100%;
+    padding: 0 0.5rem;
+    line-height: 2.5rem;
+    border: 1px solid #a2adb7;
+    border-radius: 0.313rem;
+}
+
+/* Attribute Selector */
+input[type=radio],
+input[type=checkbox] {
+    width: unset;
+}
+
+input[type=radio] {
+    margin-right: 0.5rem;
+}
+
+input[type=checkbox] {
+    text-align: center;
+    margin-left: 0.3rem;
+}
+
+.radio-btn {
+    display: inline-flex;
+}
+
+.check-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type=submit] {
+    background-color: var(--li-blue);
+    color: var(--white);
+}
+
+@media screen and (min-width: 62.5rem) {
+    fieldset {
+        width: 40.625rem;
+    }
+
+    fieldset > div.radio-btn {
+        flex-wrap: wrap;
+    }
+
+    section {
+        display: flex;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    section > div {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    section {
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+}
